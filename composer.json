@@ -1,0 +1,22 @@
+{
+    "name": "oliverwieland/dmg-read-more",
+    "description": "A Gutenberg block for inserting stylized 'Read More' links to posts, with a WP-CLI command to search for posts containing the block, optimized for large databases.",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Oliver Wieland",
+            "email": "contact@owmc.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

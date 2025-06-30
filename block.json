@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "dmg/read-more",
+    "title": "DMG Read More",
+    "category": "common",
+    "icon": "admin-links",
+    "description": "A block to display a 'Read More' link to a selected post.",
+    "attributes": {
+        "postId": {
+            "type": "number",
+            "default": 0
+        },
+        "postTitle": {
+            "type": "string",
+            "default": ""
+        },
+        "postLink": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css"
+}
