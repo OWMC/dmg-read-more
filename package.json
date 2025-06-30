@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "DMG block for stylized post links.",
     "author": "Oliver Wieland",
-    "license": "GPL-2.0-or-later",
+    "license": "GPL-2. no0-or-later",
     "main": "build/index.js",
     "scripts": {
         "build": "wp-scripts build",
@@ -12,7 +12,8 @@
         "lint:css": "wp-scripts lint-style",
         "lint:js": "wp-scripts lint-js",
         "packages-update": "wp-scripts packages-update",
-        "plugin-zip": "wp-scripts plugin-zip"
+        "plugin-zip": "wp-scripts plugin-zip",
+        "postinstall": "npm run build"
     },
     "devDependencies": {
         "@wordpress/scripts": "^30.19.0"

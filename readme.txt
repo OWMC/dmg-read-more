@@ -24,10 +24,11 @@ DMG Read More is a custom Gutenberg block that allows users to select a post via
 == Installation ==
 
 1. Upload the `dmg-read-more` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. On activation, the plugin creates a `wp_post_blocks` table to track block usage.
-4. Add the "DMG Read More" block to any post or page via the Gutenberg editor.
-5. Use the WP-CLI command `wp dmg-read-more search` to find posts containing the block (requires WP-CLI).
+2. Run npm install in the plugin directory to install dependencies and automatically build the block assets (this generates the build folder).
+3. Activate the plugin through the 'Plugins' menu in WordPress.
+4. On activation, the plugin creates a `wp_post_blocks` table to track block usage.
+5. Add the "DMG Read More" block to any post or page via the Gutenberg editor.
+6. Use the WP-CLI command `wp dmg-read-more search` to find posts containing the block (requires WP-CLI).
 
 == Usage ==
 
@@ -72,10 +73,11 @@ The WP-CLI command outputs: `No posts found with the dmg/read-more block in the 
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release. Ensure your WordPress database user has permissions to create tables for the `wp_post_blocks` table setup.
+= 1.0.0 = Initial release. Ensure your WordPress database user has permissions to create tables for the wp_post_blocks table setup. Run npm install to generate the build folder after installation.
 
 == Additional Notes ==
 
 - The plugin requires MAMP or a similar environment with MySQL configured correctly (e.g., `DB_HOST` as `127.0.0.1:8889` for MAMP).
 - For WP-CLI, ensure `/Applications/MAMP/Library/bin` is in your `PATH` to avoid database connection issues.
 - Update WP-CLI to the latest version to avoid PHP 8.2+ deprecation warnings.
+- The build folder is not included in the repository; run npm install to generate it.
